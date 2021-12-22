@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+<body>
+    <h1> AQN AZURE APP </h1>
+    <button onclick="verFormulario()"class="btn btn-primary m-4">
+        Agregar
+    </button>
+    <div id="divAlumno">
+
+    </div>
+
+
+    <div id="divFormulario" style="position: fixed;top:0;left:0;
+    width: 100%; height: 100%; background-color: white; display: none;">
+        <div class="col-md-6 m-auto">
+            <h1 class="text-center">Agregar Alumno</h1>
+                <div class="form-group">
+                    <label>ID</label>
+                    <input readonly type="text" id="txtid" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label>No.Control</label>
+                    <input type="text" id="txtmatricula" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" id="txtnombre" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label>Apellido Paterno</label>
+                    <input type="text" id="txtap_paterno" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label>Apellido Materno</label>
+                    <input type="text" id="txtap_materno" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label>Carrera</label>
+                    <input type="text" id="txtcarrera" class="form-control"/>
+                </div>
+                <div>
+                    <button onclick="enviarDatos()" class="btn btn-primary">
+                        Aceptar
+                    </button>
+                    <button onclick="ocultarFormulario()" class="btn btn-danger">
+                        Regresar
+                    </button>
+                </div>
+        </div>
+
+    </div>
+    
+</body>
+<script src="../files/js/index.js"> </script>
+</html>
