@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-var cadenaconexion="mongodb://localhost/azure";
+var cadenaconexion="mongodb+srv://AQNPRUEBA:CHIQUITIN31sA@clusteraqn.njhm6.mongodb.net/tareacamacho?retryWrites=true&w=majority";
 var Schema= mongoose.Schema;
 mongoose.connect(cadenaconexion,{useNewUrlParse:true,
 useUnifiedTopology:true},(err,res)=>{
