@@ -6,7 +6,7 @@ useUnifiedTopology:true},(err,res)=>{
     if(err){
         console.log("Ocurrio un error");
     }else{
-        console.log("Se conectó correctamente");
+        console.log("Se conectó correctamentee");
     }
 
 })
