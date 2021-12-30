@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "express.js",
   "scripts": {
-    "test": " "
+    "test": " ",
+    "start": "node ./express.js"
   },
   "author": "",
   "license": "ISC",

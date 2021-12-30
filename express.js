@@ -42,6 +42,9 @@ app.get("/recuperarAlumno/:id",(request,response)=>{
     cn.getFindId(request,response);
 })
 
-app.listen("9000",()=>{
-    console.log("El servidor está iniciado");
-})
+app.set('port', process.env.PORT || 1337);
+async function main(){
+    app.listen(app.get('port'));
+    console.log('Server en port',app.get('port'));
+}
+main();
